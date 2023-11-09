@@ -1,24 +1,26 @@
 {
-  "name": "POA Network Core",
-  "chain": "POA",
-  "rpc": ["https://core.poa.network"],
+  "name": "Otxchain Mainnet",
+  "chain": "OTX",
+  "rpc": [
+    "https://otx-dataseed.otxscan.io/",
+    "wss://otx-dataseed.otxscan.io/ws"
+  ],
   "faucets": [],
   "nativeCurrency": {
-    "name": "POA Network Core Ether",
-    "symbol": "POA",
+    "name": "OTX",
+    "symbol": "OTX",
     "decimals": 18
   },
-  "infoURL": "https://poa.network",
-  "shortName": "poa",
+  "features": [{ "name": "EIP155" }, { "name": "EIP1559" }],
+  "infoURL": "https://otxchain.org",
+  "shortName": "otx",
   "chainId": 99,
   "networkId": 99,
-  "slip44": 178,
-  "explorers": [
-    {
-      "name": "blockscout",
-      "url": "https://blockscout.com/poa/core",
-      "icon": "blockscout",
-      "standard": "EIP3091"
-    }
-  ]
+  "icon": "otxchain",
+  "explorers": [{
+    "name": "otxscan",
+    "url": "https://otxscan.io",
+    "icon": "otxchain",
+    "standard": "EIP3091"
+  }]
 }
